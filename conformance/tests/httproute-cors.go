@@ -491,11 +491,8 @@ var HTTPRouteCORS = suite.ConformanceTest{
 				Response: http.Response{
 					StatusCode: 200,
 					ValidHeaderValues: map[string][]string{
-						"access-control-allow-origin": {"https://other.foo.com"},
-						"access-control-allow-methods": {
-							"PUT",
-							"*",
-						},
+						"access-control-allow-origin":  {"https://other.foo.com"},
+						"access-control-allow-methods": {"GET"},
 						"access-control-allow-headers": {
 							"x-header-1, x-header-2",
 							"x-header-2, x-header-1",
